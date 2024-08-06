@@ -1,2 +1,2 @@
-# rian-resolusi
+# rian-projek
 Repository 
