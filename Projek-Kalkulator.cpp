@@ -14,17 +14,16 @@ int main(){
     cout << "2. Pengurangan" << endl;
     cout << "3. Pembagian" << endl;
     cout << "4. Perkalian" << endl << endl;
-
+    
+    cout << "Masukkan Angka Pertama : ";
+    cin >> angka1;
+    cout << "Masukkan Angka Kedua : ";
+    cin >> angka2;
    
     cout << "Masukkan Pilihan : ";
     cin >> menu; 
 
     system("cls");
-    cout << "Masukkan Angka Pertama : ";
-    cin >> angka1;
-    cout << "Masukkan Angka Kedua : ";
-    cin >> angka2;
-
     if (menu==1) {
         hasil = angka1 + angka2;
         cout << "Hasil penjumlahan = " << hasil;
@@ -44,6 +43,10 @@ int main(){
         hasil = angka1 * angka2;
         cout << "Hasil Perkalian = " << hasil;
     }
+
+   else {
+            cout << "ERROR, PILIHAN TIDAK DAPAT DI TEMUKAN";
+        }
 
     return 0;
 }
