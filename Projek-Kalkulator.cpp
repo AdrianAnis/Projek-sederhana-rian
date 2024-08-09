@@ -16,33 +16,46 @@ int main(){
     cout << "3. Pembagian" << endl;
     cout << "4. Perkalian" << endl << endl;
     
+
+    while (true){  
+    cout << "Masukkan Pilihan : ";
+    cin >> menu_awal; 
+    cout << endl;
+
+    if (menu_awal >= 1 && menu_awal <= 4) {
+        break;
+    }
+    else
+    {
+        cout << "======ERROR!! PILIHAN TIDAK DAPAT DI TEMUKAN=====" << endl;
+        cout << "   ===Silahkan Masukkan kembali pilihan anda===" << endl << endl;
+    }
+}
+    
     cout << "Masukkan Angka Pertama : ";
     cin >> angka1;
     cout << "Masukkan Angka Kedua : ";
     cin >> angka2;
    
-    cout << "Masukkan Pilihan : ";
-    cin >> menu_awal; 
-
     system("cls");
     if (menu_awal==1) {
         hasil = angka1 + angka2;
-        cout << "Hasil penjumlahan = " << hasil;
+        cout << "Hasil penjumlahan-nya Adalah = " << hasil;
     }
 
     else if (menu_awal==2) {
         hasil = angka1 - angka2;
-        cout << "Hasil Pengurangan = " << hasil;
+        cout << "Hasil Pengurangan-nya Adalah = " << hasil;
     }
 
     else if (menu_awal==3) {
         hasil = angka1 / angka2;
-        cout << "Hasil Pembagian = " << hasil;
+        cout << "Hasil Pembagian-nya Adalah = " << hasil;
     }
 
     else if (menu_awal==4) {
         hasil = angka1 * angka2;
-        cout << "Hasil Perkalian = " << hasil;
+        cout << "Hasil Perkalian-nya Adalah = " << hasil;
     }
 
     else {
@@ -67,7 +80,8 @@ int main(){
 
     else {
         system("cls");
-        cout << "Error, pilihan tidak ditemukan";
+        cout << "======ERROR!! PILIHAN TIDAK DAPAT DI TEMUKAN=====" << endl;
+        cout << "   ===Silahkan Masukkan kembali pilihan anda===" << endl;
         goto menu_2;
     }
 
